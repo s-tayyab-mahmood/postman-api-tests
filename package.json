@@ -1,0 +1,16 @@
+{
+  "name": "postman-api-tests",
+  "version": "1.0.0",
+  "description": "Postman collection for the Swagger Petstore API, run in CI with Newman",
+  "private": true,
+  "scripts": {
+    "test": "newman run collections/petstore-api-tests.postman_collection.json -e environments/petstore-public.postman_environment.json -r cli,htmlextra,junit --reporter-htmlextra-export reports/report.html --reporter-junit-export reports/junit.xml",
+    "test:data-driven": "newman run collections/petstore-api-tests.postman_collection.json -e environments/petstore-public.postman_environment.json --folder \"02 - Pet lifecycle\" -d data/pets.csv -r cli,htmlextra --reporter-htmlextra-export reports/data-driven-report.html"
+  },
+  "author": "Syed Tayyab Mahmood",
+  "license": "MIT",
+  "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
