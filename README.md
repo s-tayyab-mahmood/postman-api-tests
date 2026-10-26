@@ -1,6 +1,6 @@
 # postman-api-tests
 
-![Postman API Tests](https://github.com/YOUR_GITHUB_USERNAME/postman-api-tests/actions/workflows/newman.yml/badge.svg)
+![Postman API Tests](https://github.com/s-tayyab-mahmood/postman-api-tests/actions/workflows/newman.yml/badge.svg)
 
 Postman collection for the [Swagger Petstore](https://petstore.swagger.io) API, run in CI with Newman.
 
